@@ -1,11 +1,11 @@
 const axios = require('axios');
 
 class ErrorHandler {
-  constructor(error) {
-    this.error = error;
-  }
   static init(error) {
     return new ErrorHandler(error);
+  }
+  constructor(error) {
+    this.error = error;
   }
   handle() {
     let error = this.error;
