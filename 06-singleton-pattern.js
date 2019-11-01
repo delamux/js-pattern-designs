@@ -1,8 +1,8 @@
-import { get as _get } from 'axios';
+const axios = require('axios');
 
 class HttpClient {
   get(url) {
-    return _get(url).then(response => response.data);
+    return axios.get(url).then(response => response.data);
   }
 }
 
