@@ -1,5 +1,9 @@
 const axios = require('axios');
 
+/**
+ * Esta clase es lo que viene siendo un refactor
+ * ya que hay muchas clases en las que vas a gestionar errores
+ */
 class ErrorHandler {
   static init(error) {
     return new ErrorHandler(error);
